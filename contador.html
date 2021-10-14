@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contador digital</title>
+    <!--<title> Increment & Decrement Button | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -12,17 +12,15 @@
       <span class="num">01</span>
       <span class="plus">+</span>
     </div>
-
     <script>
-      const plus = document.querSelector('.plus'),
-        minus = document.querSelector('.minus'),
-        num = document.querSelector('.num')
-
+      const plus = document.querySelector('.plus'),
+        minus = document.querySelector('.minus'),
+        num = document.querySelector('.num')
       let a = 1
-
-      plus.addEvebtListener('click', () => {
+      plus.addEventListener('click', () => {
         a++
-        console.log('a')
+        a = a < 10 ? '0' + a : a
+        num.innerText = a
       })
     </script>
   </body>
