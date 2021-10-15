@@ -33,6 +33,7 @@ body {
   text-align: center;
   font-size: 55px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* barras que separam o número */
